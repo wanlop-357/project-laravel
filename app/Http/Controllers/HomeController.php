@@ -19,10 +19,11 @@ class HomeController extends Controller
     public function index(){
         echo view('Home');
     }
-    
+
     public function getdata(){
         $BDM = new DBModel();
         $data = $BDM->getdata();
+        echo 'a';
         return $data;
     }
 
