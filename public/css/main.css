@@ -1,0 +1,22 @@
+.box-h-txt {
+    border: 1px solid #ffffff;
+    text-align: center;
+    background: #007bff;
+    color: #fff;
+    font-size: 20px;
+}
+.box-txt {
+    border: 1px solid #fff;
+    background: #6eb3fd;
+    padding: 3px 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.box-h-ze {
+    padding: 14px 17px;
+}
+
+.box-one.row>.box-tow>button {
+    margin: 10px 0px;
+}
