@@ -23,7 +23,6 @@ class HomeController extends Controller
     public function getdata(){
         $BDM = new DBModel();
         $data = $BDM->getdata();
-
         return $data;
     }
 
