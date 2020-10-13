@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/','HomeController@index');
 Route::post('/getdata','HomeController@getdata');
+Route::post('/insertData','HomeController@insertData');

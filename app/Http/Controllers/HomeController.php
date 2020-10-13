@@ -26,5 +26,13 @@ class HomeController extends Controller
         return $data;
     }
 
+    public function insertData(Request $request){
+        $data = $request->input();
+        return json_encode($data);
+        // $BDM = new DBModel();
+        // $data = $BDM->getdata();
+        // return $data;
+    }
+
     
 }

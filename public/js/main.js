@@ -45,24 +45,26 @@ var qut = {
 			'username' : $('[name=username]',opj).val(),
 			'email' : $('[name=email]',opj).val(),
 			'password-o' : $('[name=password-o]',opj).val(),
+			
 		};
+		qut.setupAjax();
 		$.ajax({
-			url : host+'api/ApiHome/insertData',
-			headers: {'X-Requested-With': 'XMLHttpRequest'},
+			url : host+'insertData',
+			// headers: {'X-Requested-With': 'XMLHttpRequest'},
 			dataType : 'json',
 			data:data,
 			type: "POST",
 			cache : false,
 		}).done(function(data){
-			if(data.st == 1){
-				$('.bd-example-modal-lg').modal('hide');
-				qut.getdata();
-			}else{
-				alert('fall');
-				console.log(data);
-			}
+			console.log(data);
+			// if(data.st == 1){
+			// 	$('.bd-example-modal-lg').modal('hide');
+			// 	qut.getdata();
+			// }else{
+			// 	alert('fall');
+			// 	console.log(data);
+			// }
 		});
-		
 	},
 	get_data_edit:function(opj){
 		var data = {'id':$(opj).attr('data-id')}
